@@ -83,16 +83,16 @@
 // // console.log(allNames);
 
 
-// // var eligibleUniversities =["iqra","cecos","ims","imscience","islamia"];
-// // // var check = prompt("Please your university name");
+var eligibleUniversities =["iqra","cecos","ims","imscience","islamia"];
+var check = prompt("Please your university name");
 
 
 
-// // for(var eligibleStudents = 0; eligibleStudents < eligibleUniversities.length; eligibleStudents++){
-// //     if(eligibleUniversities[eligibleStudents] === check){
-// //         alert("yes");
-// //     }
-// // }
+for(var eligibleStudents = 0; eligibleStudents < eligibleUniversities.length; eligibleStudents++){
+    if(eligibleUniversities[eligibleStudents] === check){
+        alert("yes");
+    }
+}
 
 // // var str = "HellO WoRld";
 // // var str = "hElLo wOrLd";
@@ -182,42 +182,42 @@
 //   reverseName += name[i];
 // }
 // console.log(reverseName.toUpperCase());
-function countVowels(text) {
-  let vowelCount = 0;
-  const lowercaseText = text.toLowerCase();
+// function countVowels(text) {
+//   let vowelCount = 0;
+//   const lowercaseText = text.toLowerCase();
 
-  for (let char of lowercaseText) {
-    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
-      vowelCount++;
-    }const secretNumber = Math.floor(Math.random() * 100) + 1;
-    let guesses = 0;
-    const maxAttempts = 5;
+//   for (let char of lowercaseText) {
+//     if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+//       vowelCount++;
+//     }const secretNumber = Math.floor(Math.random() * 100) + 1;
+//     let guesses = 0;
+//     const maxAttempts = 5;
     
-    while (guesses < maxAttempts) {
-      const userGuess = parseInt(prompt("Guess a number between 1 and 100:"));
-      guesses++;
+//     while (guesses < maxAttempts) {
+//       const userGuess = parseInt(prompt("Guess a number between 1 and 100:"));
+//       guesses++;
     
-      if (userGuess === secretNumber) {
-        console.log("You guessed it! The number was", secretNumber);
-        break;
-      } else if (userGuess > secretNumber) {
-        console.log("Too high! Guess lower.");
-      } else {
-        console.log("Too low! Guess higher.");
-      }
-    }
+//       if (userGuess === secretNumber) {
+//         console.log("You guessed it! The number was", secretNumber);
+//         break;
+//       } else if (userGuess > secretNumber) {
+//         console.log("Too high! Guess lower.");
+//       } else {
+//         console.log("Too low! Guess higher.");
+//       }
+//     }
     
-    if (guesses === maxAttempts) {
-      console.error("Out of guesses! The number was", secretNumber);
-    }
+//     if (guesses === maxAttempts) {
+//       console.error("Out of guesses! The number was", secretNumber);
+//     }
     
-  }
+//   }
 
-  return vowelCount;
-}
+//   return vowelCount;
+// }
 
 // Example usage:
-const message = "Hello, woruld!";
-const vowelCount = countVowels(message);
-console.log("Number of vowels:", vowelCount); // Output: Number of vowels: 4
+// const message = "Hello, woruld!";
+// const vowelCount = countVowels(message);
+// console.log("Number of vowels:", vowelCount); // Output: Number of vowels: 4
 
