@@ -157,72 +157,10 @@
 // //     console.log(students[i].toUpperCase());
 // //   }
 
-//   // Here's a code to get you started:
-
-// // Initialize an empty array to store tasks
-// let tasks = [];
-
-// // Use a while loop to repeatedly ask the user for input
-// while (true) {
-//   // Ask the user for a task name using prompt()
-//   let task = prompt("Enter a task (or 'list' to view, 'delete' to remove last task, or 'quit' to exit):");
-
-//   // Check if the user entered "list"
-//   if (task === "list") {
-//     // Display the current task list
-//     console.log(tasks);
-//   } 
-//   // Check if the user entered "delete"
-//   else if (task === "delete") {
-//     // Remove the last task from the list using pop()
-//     tasks.pop();
-//     // Display the updated list
-//     console.log(tasks);
-//   } 
-//   // Check if the user entered "quit"
-//   else if (task === "quit") {
-//     // Exit the loop
-//     break;
-//   } 
-//   // Otherwise, add the new task to the list using push()
-//   else {
-// //     tasks.push(task);
-// //     // Display the updated list
-// //     console.log(tasks);
-// //   }
-// // }
 
 
-// // let tasks = [];
-// // let quit = false;
 
-// // while (!quit) {
-// //   let task = prompt("Enter a task (or 'list' to view, 'delete' to remove last task, or 'quit' to exit):");
 
-// //   if (task === "list") {
-// //     console.log("Task List:");
-// //     tasks.forEach((task, index) => console.log(`${index + 1}. ${task}`));
-// //   } else if (task === "delete") {
-// //     if (tasks.length > 0) {
-// //       tasks.pop();
-// //       console.log("Task removed. Current list:");
-// //       tasks.forEach((task, index) => console.log(`${index + 1}. ${task}`));
-// //     } else {
-// //       console.log("No tasks to delete.");
-// //     }
-// //   } else if (task === "quit") {
-// //     quit = true;
-// //   } else {
-// //     if (task.trim() !== "") {
-// //       tasks.push(task);
-// //       console.log(`Task added: ${task}`);
-// //     } else {
-// //       console.log("Invalid input. Please enter a valid task name.");
-// //     }
-// //   }
-// // }
-
-// // console.log("Goodbye!");
 
 // var task = [];
 

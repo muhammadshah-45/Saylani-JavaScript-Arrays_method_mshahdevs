@@ -91,3 +91,100 @@ const q4 = ["Oct", "Nov", "May"];
 
 const year = [...q1, ...q2, ...q3, ...q4];
 console.log(year);
+
+const numbers_1 = [1, 2, 3, 4, 50, 101, 102];
+function modifyArray(numbers){
+  const modifiedNumbers = numbers.map(number => {
+    if(number % 2 === 0){
+      return number * 2;
+    }else{
+      return number + 1;
+    }
+  }).filter(number => number <= 100);
+  return modifiedNumbers;
+}
+
+const modifiedNumbers = modifyArray(numbers_1);
+
+console.log(modifiedNumbers);
+
+// var hello = "muhammad shah @## 21223";
+var hello = "hElLo wOrld! 123";
+
+var removeVowels = hello.replace(/[aeiou]/g," ");
+
+var removeNumbers = removeVowels.replace(/[^a-z]/g,"");
+console.log(hello);
+console.log(removeVowels);
+console.log(removeNumbers);
+
+var newStr = "";
+
+for(var i=0; i<hello.length; i++){
+  if(i % 2 === 0){
+    newStr +=hello[i].toUpperCase()
+  }else{
+    newStr +=hello[i].toLowerCase();
+  }
+
+}
+console.log(newStr);
+
+
+function Student(first,last,age,marks){
+  this.first = first;
+  this.last = last;
+  this.age = age;
+  this.marks = marks;
+}
+
+const student =new Student("Muhammad","Shah",20,450);
+console.log(student);
+
+const searchObject = (arr, property, value) => {
+  return arr.find(obj => obj[property] === value);
+};
+
+
+const arr = [
+  { id: 1, name: 'John', age: 30 },
+  { id: 2, name: 'Jane', age: 25 },
+  { id: 3, name: 'Bob', age: 40 },
+  {id: 4, name: 'Shah', age:19}
+];
+
+const arrSearch = arr.find((obj) => { 
+  return obj }
+
+)
+const search = searchObject(arr, 'id', 3);
+console.log(search); // Output: { id: 2, name: 'Jane', age: 25 }
+
+const fruits_2 = [
+  {name:"Mango",price:200}
+  ,{name:"Banana",price:300},
+  {name:"Orange",price:150}
+];
+
+const searchFruits = (arr,property,value) => {
+  return arr.find(obj => obj[property] === value);
+}
+
+const search_fruit = searchFruits(fruits_2, 'price', 150);
+
+console.log(search_fruit); // Output: { name: 'Mango', price: 200 }
+
+const arr2 = [1, 2, 5, 3, 5, 4, 5, 10, 6, 5];
+
+// const uniqueArr =arr2.indexOf(5); //Output: indext at 2
+// const uniqueArr =arr2.lastIndexOf(5); //Output: indext at 9
+// const uniqueArr =arr2.includes(5); //Output: true
+// const uniqueArr =arr2.findIndex(valueFindindex)
+// function valueFindindex(value){
+//   return value === 5;
+// }; //Output: index at 2
+// const uniqueArr2 =arr2.findLast(x => x === 5); //Output: 5
+// const uniqueArr = arr2.findLastIndex(x => x ); //Output: 9
+
+console.log(uniqueArr2);
+
