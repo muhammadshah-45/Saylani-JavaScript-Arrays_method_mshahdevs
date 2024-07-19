@@ -223,7 +223,8 @@ const a1 = [
   { name: "Product B", price: 100 },
   { name: "Product C", price: 20 }
 ];
-
+const findinclude = a1.includes({name: "Product C"});
+console.log(findinclude);
 // Index of first object with price > 100
 const firstIndex = a1.findIndex(obj => obj.price > 100);
 
@@ -263,9 +264,14 @@ console.log(mapped);
 
 const arr4 = ["m","u","h","a","m","m","a","d"];
 
+const sliced = arr4.slice(0,9);
+console.log(sliced);
+
 const strss= arr4.reduce((a ,val)=> a + val);
 
 console.log(strss);
+
+
 
 let output = '';
 
@@ -273,3 +279,87 @@ for(let i = 0; i < arr4.length; i++){
   output += arr4[i];
 }
 console.log(output);
+
+const arr5 =["Fruits","Dry","Vegetables","Cereal","Gluten","Pears","Chocolate","Fruits","Vegetables"];
+
+const findFruit = arr5.find(x => x === "Fruits");
+console.log(`findFruitindex: ${findFruit}`);
+
+const findFruitindex =arr5.findIndex(x => x === "Fruits");
+console.log(`findFruit: ${findFruitindex}`);
+
+const findFruitLast =arr5.findLast(x => x === "Fruits");
+console.log(`findFruitLast: ${findFruitLast}`);
+
+const findFruitLastindex =arr5.findLastIndex(x => x === "Fruits");
+console.log(`findFruitLast : ${findFruitLastindex}`);
+
+const findFruitinclude =arr5.includes( "Dry");
+console.log(`findFruitinclude : ${findFruitinclude}`);
+
+const findFruitindexOf =arr5.indexOf( "Fruits");
+console.log(`findFruitindexOf : ${findFruitindexOf}`);
+
+const findFruitlastindexOf =arr5.findLastIndex(x => x === "Fruits");
+console.log(`findFruitLastindexOf : ${findFruitlastindexOf}`);
+
+
+const student1= {
+  firstName: "Muhammad",
+  lastName: "Shah",
+  age: 20,
+  marks: 450
+}
+
+const student2= {
+  firstName: "Ali",
+  lastName: "Khan",
+  
+}
+
+const student3= Object.assign(student1,student2);
+const student4= Object.entries(student1);
+const student5= Object.keys(student1);
+const student6= Object.values(student1);
+
+console.log(student5);
+console.log(student4);
+
+console.log(student3);
+
+const fruits2 = {Bananas:300, Oranges:200, Apples:500};
+
+const myMap = new Map(Object.entries(fruits2));
+
+let text = "";
+for (let [fruit, value] of Object.entries(fruits2)) {
+  text += fruit + ": " + value  ;
+}
+console.log(text);
+console.log(myMap);
+
+const fruits3 = [
+  ["apples", 300],
+  ["pears", 900],
+  ["bananas", 500]
+];
+
+const myObj = Object.fromEntries(fruits3);
+console.log(myObj);
+
+const fruits5 = [
+{name:"apples", quantity:300},
+{name:"bananas", quantity:500},
+{name:"oranges", quantity:200},
+{name:"kiwi", quantity:150}
+];
+
+// Callback function to Group Elements
+function myCallback({ quantity }) {
+return quantity > 200 ? "ok" : "low";
+}
+
+// Group by Quantity
+const result = Object.groupBy(fruits5, myCallback);
+
+console.log(result);
