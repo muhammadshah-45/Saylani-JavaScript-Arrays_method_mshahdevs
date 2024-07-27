@@ -12,3 +12,5 @@ Task: Declare a variable str and assign it the value "Full Stack Developer". Ext
 
 Exercise 5
 Task: Declare a variable str and assign it the value "Javascript Strings" Extract and print the last four characters of the string.
+
+
