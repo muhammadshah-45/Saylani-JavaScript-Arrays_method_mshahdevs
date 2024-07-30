@@ -243,3 +243,42 @@ for(const property in fruit){
   console.log(`${property}: ${fruit[property]}`);
 }
 
+
+
+let name = "Hammad";
+let age = 23;
+
+// let obj1={
+//   name,
+//   age,
+//   detail(){
+//     return `${this.name}`;
+//   }
+// }
+
+let fname= "John";
+let course = "Course";
+function test(name, course){
+  let fullName= name + " " + course;
+  return {fullName,name, course}
+}
+let s = test(fname, course);
+console.log(s.fullName);
+console.log(s.course);
+
+let obj1={
+  name,
+  age,
+  'detail show'(){
+    return `${this.name}`;
+  }
+}
+console.log(obj1);
+console.log(obj1['detail show']());
+
+let n  ="name";
+
+let obj2={
+  ["first" + n]:"Shah",
+}
+console.log(obj2);
