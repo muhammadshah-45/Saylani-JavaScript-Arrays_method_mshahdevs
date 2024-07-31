@@ -192,7 +192,7 @@ const person3 = {
   lastName:"Bob",
   age: 34,
   fullName: function(){
-    return this.firstName + " " + this.lastName;
+    return person3.firstName + " " + person3.lastName;
   }
 }
 console.log(person3);

@@ -47,3 +47,24 @@
  [fName, lName] = [lName, fName];
  console.log(fName, lName);
 
+// let user = ["Muhammad", 23,["Male",25000]];
+// let [name="Shah devs",...args]= user;
+// console.log(name);
+
+// function user([name, fName]) {
+//     console.log(name);
+//     console.log(fName);
+// }
+// user(["Muayan",34]); //
+
+
+function user(){
+    return ["muhammad",43];
+
+}
+let [name, age] = user();
+
+console.log(name);
+console.log(agej);
+
+
