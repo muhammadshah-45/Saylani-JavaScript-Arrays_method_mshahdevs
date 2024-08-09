@@ -71,3 +71,9 @@ for(let i of myArray) {
 
     console.log(text+=myArray[i]);
 }
+
+let date = new Date();
+console.log(date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear());
+
+let currentdate = new Date();
+console.log();

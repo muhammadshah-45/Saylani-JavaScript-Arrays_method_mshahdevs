@@ -18,3 +18,19 @@ for (const prop in obj) {
    // console.log(`obj.${prop} = ${obj[prop]}`);
   }
 }
+
+const employee={
+  name: "John Doe",
+  age: 30,
+  department: "Sales",
+  salary: 5000
+}
+
+const employee2 ={
+ name: employee.name,
+ salary: employee.salary
+};
+
+console.log(employee);
+console.log(employee2);
+
