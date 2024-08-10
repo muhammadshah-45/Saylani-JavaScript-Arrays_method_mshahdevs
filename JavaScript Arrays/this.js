@@ -21,3 +21,6 @@ const person2 = {
 let d= person.my.bind(person2);
 console.log(d);
 
+
+console.log(this);
+let cricket = "cricket";
